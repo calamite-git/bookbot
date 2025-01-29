@@ -5,7 +5,7 @@ def main():
     char_frequency = calculate_char_frequency(text)
     sorted_char_list = sort_char_frequency(char_frequency)
 
-    print(f"--- Begin report of {book_path} ---")
+    print(f"--- BookBot Analysis Report ---")
     print(f"{word_count} words found in the document")
     print()
 
@@ -14,9 +14,7 @@ def main():
         if not char.isalpha():
             continue
         print(f"The '{char}' character was found {char_info['num']} times")
-
-    print("--- End report ---")
-
+        
 
 def read_book_text(path):
     """Reads and returns the text from the given file path."""
